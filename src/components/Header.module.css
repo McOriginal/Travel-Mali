@@ -1,0 +1,59 @@
+
+
+.header{
+    height: 90vh;
+    width: 100%;
+    background: url("https://tchadinfos.com/wp-content/uploads/2021/08/iStock-1135806880.jpg");
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.logo__div{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+.logo__title{
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+
+.shadow{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgba(19, 6, 87, 0.744), rgba(21, 9, 97, 0.243), rgba(20, 6, 97, 0.086));
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+
+.header__text{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.header__title{
+    font-size: 2.5rem;
+    font-family: "Playwrite ES Deco", cursive ;
+    text-transform: capitalize;
+    color: var(--white-color);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: var(--text-shadow);
+}
+
+.header__text p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    opacity: 0.8;
+}
