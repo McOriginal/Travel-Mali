@@ -31,22 +31,23 @@ p{
   font-size: 1.2rem;
 }
 
-.btn{
-  height: 1.5rem;
-  width: 2rem;
-  font-size: 0.5rem;
-  background-color: #071952;
-  color: #EBF4F6;
-  border: 1px solid #088395;
-  border-radius: 2rem;
-  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.6);
+
+
+
+.footer{
+  width: 100%;
+  padding: 0.3rem;
+  background: var(--blue-color);
 }
 
-.btn:hover{
-  cursor: pointer;
-  width: 2.1rem;
-  font-size: 0.7rem;
+.footer p{
+  font-size: 1rem;
+  color: var(--white-color);
+  margin: 20px auto;
+  text-align: center;
 }
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

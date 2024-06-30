@@ -1,0 +1,45 @@
+
+
+
+.nav__box{
+    position: absolute;
+    top: 4%;
+    right: 10%;
+    /* background: var(--light-blue); */
+}
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav__list li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav__list li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Playwrite ZA", cursive;
+    color: var(--white-color);
+}
+
+.nav__list li a:hover{
+    border-bottom: 2px solid var(--blue-color);
+    transition: 0.2s ease-out;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.active{
+    border-bottom: 2px solid var(--blue-color);
+    transition: 0.2s ease-out;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
