@@ -3,7 +3,7 @@ import { TbUsersGroup } from "react-icons/tb";
 import classes from './NextTravel.module.css';
 
 function BoxTravel({image , nbplace, visiteDate, place, description}){
-
+    
     return(
         <>
 

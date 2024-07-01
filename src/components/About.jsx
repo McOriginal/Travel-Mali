@@ -9,7 +9,7 @@ function AboutUs(){
         
         <div className={classes.logo__div}>
             <GiCommercialAirplane className={classes.logo} />
-            <h1 className={classes.logo__title} > A propos de nous</h1>
+            <h1 className={classes.logo__title} > à propos de nous</h1>
             </div>
         <div className={classes.about}>
            <div className={classes.about__containte}>

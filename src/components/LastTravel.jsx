@@ -1,10 +1,19 @@
 import BoxTravel from "./BoxTravel";
-
+import ShowDialogue from "./ShowDialogue";
 import classes from './NextTravel.module.css';
+import { useRef } from "react";
 
 function LastTravel(){
+
+    const dialog = useRef();
+
+    function ShowDialogHandle(){
+        dialog.current.open();
+    }
+
     return(
         <>
+        <ShowDialogue title="Les image prises" ref={dialog}  />
          <h1 className={classes.box__title}>Voyage Précédent</h1>
          <div className={classes.next__travel}>
 
@@ -29,6 +38,8 @@ function LastTravel(){
          place="Guinée Konakry"
          description="La Guinée est un pays d'Afrique de l'Ouest bordé par l'océan Atlantique à l'ouest."
          />
+
+        <button className="show__btn" onClick={ShowDialogHandle}>Voir les images</button>
          </div>  
         </>
     );

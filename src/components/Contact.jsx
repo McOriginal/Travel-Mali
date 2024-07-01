@@ -32,7 +32,7 @@ function Contact(){
             </div>
 
         <div className={classes.contact__form}>
-            <fom>
+            <form>
                 <div className={classes.contact__inputbox}>
                     <label htmlFor="name">Nom complèt</label>
                     <input type="text" required name="fullname" id="name" />
@@ -46,7 +46,7 @@ function Contact(){
                     <textarea  required name="message" id="message" placeholder="quel message souhaitez-vous nous faire parvenir ?"/>
                 </div>
                 <button className={classes.contact__btn}>Envoyer</button>
-            </fom>
+            </form>
         </div>
         
         </div>
