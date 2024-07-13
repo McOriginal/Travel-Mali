@@ -39,8 +39,8 @@ function LastTravel(){
          description="La Guinée est un pays d'Afrique de l'Ouest bordé par l'océan Atlantique à l'ouest."
          />
 
-        <button className="show__btn" onClick={ShowDialogHandle}>Voir les images</button>
          </div>  
+        <button className="show__btn" onClick={ShowDialogHandle}>Voir les images</button>
         </>
     );
 }

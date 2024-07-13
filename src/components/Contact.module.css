@@ -1,9 +1,12 @@
 
 
 .contact__container{
-    display: flex;
+    /* display: flex; */
     /* flex-wrap: wrap; */
-    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(270px, 1fr));
+    gap: 2px;
+    /* padding: 2rem; */
     background: white;
     margin-top: 4rem;
 }
@@ -37,15 +40,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    width: 50%;
+    align-items: center;
+    /* width: 60%; */
 }
+
 
 .contact__containte{
     display: flex;
     flex-direction: row;
-    padding: 1.6rem;
-    gap: 1rem;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    align-items: center;
+    padding: 2.6rem;
+    gap: 2rem;
 }
 
 .contact__containte h3{
@@ -63,13 +70,17 @@
 
 
 .contact__form{
-    width: 50%;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
     padding: 1rem ;
 }
 
 .contact__inputbox {
-    width: 100%;
+    /* width: 100%; */
     padding: 0.5rem ;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact__inputbox input{
@@ -123,4 +134,25 @@
     background: var(--blue-color);
     cursor: pointer;
     color: var(--white-color);
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2px;
+}
+
+.contact__form{
+    width: 100%;
+}
+
 }

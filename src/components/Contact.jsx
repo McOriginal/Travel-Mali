@@ -3,9 +3,35 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 import classes from './Contact.module.css';
+import { useState } from "react";
 
 
 function Contact(){
+
+    const [isSending, seIsSending] = useState(false);
+
+
+    function sendingForm(event){
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+        
+        // const fullname = data.get('fullname');
+        // const phone = data.get('phone');
+        // const message = data.get('message');
+        
+        console.log(data);
+
+        seIsSending(true);
+
+        setTimeout(() =>{
+            seIsSending(false);
+        }, 5000);
+    }
+    
+    
+    
 
     return (
         <>
@@ -32,20 +58,21 @@ function Contact(){
             </div>
 
         <div className={classes.contact__form}>
-            <form>
+            <form onSubmit={sendingForm}>
                 <div className={classes.contact__inputbox}>
                     <label htmlFor="name">Nom complèt</label>
                     <input type="text" required name="fullname" id="name" />
                 </div>
                 <div className={classes.contact__inputbox}>
                     <label htmlFor="phone">Téléphone</label>
-                    <input type="number" required name="phone" id="phone" />
+                    <input  type="number" required name="phone" id="phone" />
                 </div>
                 <div className={classes.contact__inputbox}>
                     <label htmlFor="message">Message</label>
                     <textarea  required name="message" id="message" placeholder="quel message souhaitez-vous nous faire parvenir ?"/>
                 </div>
-                <button className={classes.contact__btn}>Envoyer</button>
+               {!isSending && <button className={classes.contact__btn}>Envoyer </button> }
+               {isSending && <p>En cours d'envoie... </p> }
             </form>
         </div>
         
